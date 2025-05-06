@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <form action="mailto:nicolassimoesgama@gmail.com" method="post">
+        <label for="nome-usuario">Nome de Usuário:</label>
+        <input type="text" placeholder="Insira seu nome aqui" name="username" id="username" size="30" maxlength="30" value="" required>
+        <br>
+        <br>
+        
+        <label for="mail">E-mail:</label>
+        <input type="email" placeholder="exemplo@mail.com" size="30" maxlength="" required>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="coment">Deixe seu comentário aqui:</label>
+        <br>
+        <textarea name="Comentário" id="coment" cols="60" rows="10"></textarea>
+        <br>
+        <br>
+
+        <label for="mail">E-mail:</label>
+        <input type="email" placeholder="exemplo@mail.com" size="30" maxlength="">
+        <br>
+        <br>
+
+        <label for="password">Senha</label>
+        <input type="password" name="senha" id="senha" placeholder="Sua senha não será visível">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <input type="checkbox">
+        <label for="opcao">Opção 1</label>
+        <br>
+        <input type="checkbox">
+        <label for="opcao">Opção 2</label>
+        <br>
+        <input type="checkbox">
+        <label for="opcao">Opção 3</label>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="opcao-restrita">Opção 1</label>
+        <input type="radio" name="base">
+        <br>
+        <label for="opcao-restrita">Opção 2</label>
+        <input type="radio" name="base">
+        <br>
+        <label for="opcao-restrita">Opção 3</label>
+        <input type="radio" name="base">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="esporte">Esporte favorito:</label>
+        <select name="opcao-restrite" id="opcao-restrita">
+            <option value="">Selecione</option>
+            <option value="volei">Vôlei</option>
+            <option value="futebol">Futebol</option>
+            <option value="surf">Surf</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="age">Idade:</label>
+        <input type="number" name="idade" id="idade" size="5" min="0">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="emailpatter">E-mail(patter)</label>
+        <input type="email" placeholder="exemplo@mail.com" size="30" maxlength="" required>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="color">Escolha uma cor:</label>
+        <input type="color" id="color" name="color">
+
+        
+    </form>
+
+</body>
+</html>
