@@ -1,0 +1,33 @@
+
+function enviaresposta(){
+    var Idade = document.getElementById("campo_idade").value; //input é usado sempre com .value
+    Idade = parseInt(Idade)
+
+    if (Idade < 0) {
+       document.getElementById("resposta").innerHTML = "Idade inválida.";
+       //se não der certo, bota um alert pra ver se o codigo ta funcionando
+    }
+    else if (Idade == 0) {
+        alert('Recém nascido');
+    }
+    else if (10 > Idade > 0) {
+        alert('É uma criança');
+    }
+    else if (Idade > 9 && Idade < 16) {
+        alert('É um adolescente');
+    }
+    else if (Idade > 15 && Idade < 25) {
+        alert('É um jovem');
+    }
+    else if (Idade > 24 && Idade < 60) {
+        alert('É um adulto');
+    }
+    else if (Idade > 59) {
+        alert('É um idoso');
+    }
+    else {
+        alert('Não digitou idade');
+    }
+    
+}
+

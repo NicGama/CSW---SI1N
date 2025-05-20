@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Mostra a idade</h1>
+    <h3 style="text-align: center;">Regras</h3>
+
+    <ol>
+        <li>Idade menor que 0: Idade inválida;</li>
+        <li>Idade igual a 0: recém nascido;</li>
+        <li>Idade maior que 0 e menor que 10: É uma criança;</li>
+        <li>Idade maior que 9 e menor que 16: É um adolescente;</li>
+        <li>Idade maior que 15 e menor que 25: É um jovem;</li>
+        <li>Idade maior que 24 e menor que 60: É um adulto;</li>
+        <li>Idade maior que 59 é um idoso;</li>
+        <li>Idade diferente disso: Não digitou idade.</li>
+    </ol>
+
+
+
+    <div>
+        <label for="pergunta_idade">Digite a idade:</label>
+        <input type="text" name="" id="campo_idade" maxlength="2" min="1">
+        <button onclick="enviaresposta()">Identificar</button>
+    </div>
+
+<br>
+
+    <div style="border: 1px solid black; height: 70px;">
+    <p style="text-align: center;" id="resposta"></p>
+    </div>
+
+
+
+    <script src="Scripts/script"></script>
+    
+</body>
+</html>
