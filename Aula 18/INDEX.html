@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+</head>
+
+<style>
+
+body{
+    background-color: antiquewhite;
+}
+
+.img{
+    background-image: url("Imagens/tapete\ vermelho.jpg");
+    width: auto;
+    height: 150px;
+    border: 10px, solid, #054f77;
+    
+    
+}
+
+.central{
+    position:absolute; 
+    left: 50%; top:50%; 
+    transform:translate(-50% , -50%);
+    background-color: #ffffff; 
+    padding: 2%; 
+    border-radius: 10px;
+    width: 1000px;
+    height: 700px;
+    
+    
+}
+
+#pimg{
+    text-align: center;
+    font-size: 50px;
+    color: #ffffff;
+
+}
+
+button{
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    background: #054f77;
+    color: #ffffff;
+}
+
+
+
+</style>
+
+<body>
+    
+    <div class="central">
+
+        <div class="img">
+            <p id="pimg">Calculadora de idade</p>
+        </div>
+        <br>
+
+        <LABEL>Data de nascimento:</LABEL>
+        <input type="number" id="dia">
+        <select name="Meses" id="mes">
+            <option value="01">Janeiro</option>
+            <option value="02">Fevereiro</option>
+            <option value="03">Março</option>
+            <option value="04">Abril</option>
+            <option value="05">Maio</option>
+            <option value="06">Junho</option>
+            <option value="07">Julho</option>
+            <option value="08">Agosto</option>
+            <option value="09">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+        </select>
+        <input type="number" id="ano">
+        <br><br>
+        <button onclick="calcular_idade()">Calcular idade</button>
+        
+        <br><br>
+        <hr>
+        <br>
+
+        <div class="img">
+            <p id="pimg">Calculadora</p>
+        </div>
+        <br>
+        <input type="number" id="n1">
+        <select name="operador" id="operador">
+            <option value="">Selecione o operador</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="n2">
+
+    </div>
+
+    <script src="./Scripts/script.js"></script>
+
+</body>
+</html>
